@@ -1,15 +1,21 @@
 # yt-playlist-dowload-docker
 
-A docker solution to download audio from youtube playlist
+A docker solution to download audio from youtube playlist, using yotuube-dl
 
 ## Getting started
 
 Make sure to have docker installed on your host, then clone the repo and run those commands inside the yt-playlist-dowload-docker folder.
 
 ```
+# build the image from the Dockerfile
 docker build -t yt .
 
-docker run -it --name yt -v $(pwd)/output:/output yt
+# Run the container, which download audios, archive then put it inside the ./output/ folder on your host machine.
+docker run -it --name yt -v $(pwd)/output:/output yt HERE_PASTE_THE_URL
 
 # docker rm {container_id}
 ```
+
+## To-do
+
+- Change ubuntu image with alpine (lighter solution)
