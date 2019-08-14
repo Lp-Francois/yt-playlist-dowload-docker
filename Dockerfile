@@ -1,7 +1,7 @@
-FROM ubuntu:18.04
+FROM alpine:3.10
 
-RUN apt-get -y update && apt-get -y install python \
-python-pip \
+RUN apk add python \ 
+py-pip \
 curl \
 ffmpeg \
 cpio

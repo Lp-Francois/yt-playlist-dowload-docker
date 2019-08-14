@@ -16,6 +16,3 @@ docker run -it --name yt -v $(pwd)/output:/output yt [HERE_PASTE_THE_URL__https:
 # docker rm {container_id}
 ```
 
-## To-do
-
-- Change ubuntu image with alpine (lighter solution)
