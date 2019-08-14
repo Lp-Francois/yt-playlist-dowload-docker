@@ -14,3 +14,7 @@ docker build -t yt .
 docker run -it --rm --name yt -v $(pwd)/output:/output yt [HERE_PASTE_THE_URL__https://youtube?list=PL_weird_hash]
 ```
 
+#### Note
+
+If you prefer to have `mp3` rather than `m4a` as best quality,
+Just run `sed -i 's/m4a/mp3/g' script.sh` *before* the `Docker build command`.
