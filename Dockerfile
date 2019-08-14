@@ -4,7 +4,6 @@ RUN apt-get -y update && apt-get -y install python \
 python-pip \
 curl \
 ffmpeg \
-python3 \
 cpio
 
 RUN curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl && \
