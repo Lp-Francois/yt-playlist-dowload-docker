@@ -6,7 +6,6 @@ youtube-dl --extract-audio --audio-format m4a --audio-quality 0 --output "$HOME/
 
 cd "$HOME/Downloads" || exit
 find . | cpio -o --format=tar > musics.tar
-mkdir -p /output
 mv musics.tar /output/musics.tar
 
 echo "[+] Finish"
