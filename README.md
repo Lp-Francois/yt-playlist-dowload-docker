@@ -11,8 +11,6 @@ Make sure to have docker installed on your host, then clone the repo and run tho
 docker build -t yt .
 
 # Run the container, which download audios, archive then put it inside the ./output/ folder on your host machine.
-docker run -it --name yt -v $(pwd)/output:/output yt [HERE_PASTE_THE_URL__https://youtube?list=PL_weird_hash]
-
-# docker rm {container_id}
+docker run -it --rm --name yt -v $(pwd)/output:/output yt [HERE_PASTE_THE_URL__https://youtube?list=PL_weird_hash]
 ```
 
